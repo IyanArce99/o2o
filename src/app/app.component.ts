@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FoodsService } from './services/foods.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'food-app';
+
+  constructor (private foodService: FoodsService) {
+  }
+  ngOnInit() {
+  }
 }
